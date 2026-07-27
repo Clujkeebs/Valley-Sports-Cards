@@ -14,7 +14,7 @@ export default function HomePage() {
             width={520}
             height={373}
             priority
-            className="h-auto w-full max-w-md"
+            className="h-auto w-full max-w-md rounded-xl bg-valley-cream p-6 shadow-lg"
           />
           <p className="max-w-2xl font-display text-lg text-valley-cream/90 sm:text-xl">
             Two Mohawk Valley storefronts, one lifelong hobby: buying, selling, and
@@ -22,15 +22,17 @@ export default function HomePage() {
             home of the Baseball Hall of Fame.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Link
-              href="/shop"
-              className="inline-flex items-center gap-2 rounded-md bg-valley-red px-6 py-3 font-display text-sm uppercase tracking-wide text-white transition-colors hover:bg-valley-red-dark"
+            <a
+              href={business.ebayStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-valley-red px-6 py-3 font-display text-sm uppercase tracking-wide text-white transition-colors hover:bg-valley-red-dark"
             >
               Shop the Store <ArrowRight size={16} />
-            </Link>
+            </a>
             <Link
               href="/about"
-              className="inline-flex items-center gap-2 rounded-md border border-valley-gold/50 px-6 py-3 font-display text-sm uppercase tracking-wide text-valley-cream transition-colors hover:border-valley-gold hover:text-valley-gold"
+              className="inline-flex items-center justify-center gap-2 rounded-md border border-valley-gold/50 px-6 py-3 font-display text-sm uppercase tracking-wide text-valley-cream transition-colors hover:border-valley-gold hover:text-valley-gold"
             >
               Our Story
             </Link>
@@ -98,14 +100,16 @@ export default function HomePage() {
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-valley-navy/70">
             Every card and piece of memorabilia in our eBay store ships straight
-            from our shelves &mdash; sortable and filterable right here on our site.
+            from our shelves &mdash; browse the full inventory on eBay.
           </p>
-          <Link
-            href="/shop"
-            className="mt-6 inline-flex items-center gap-2 rounded-md bg-valley-navy px-6 py-3 font-display text-sm uppercase tracking-wide text-valley-cream transition-colors hover:bg-valley-navy-light"
+          <a
+            href={business.ebayStoreUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center justify-center gap-2 rounded-md bg-valley-navy px-6 py-3 font-display text-sm uppercase tracking-wide text-valley-cream transition-colors hover:bg-valley-navy-light"
           >
-            Browse Listings <ArrowRight size={16} />
-          </Link>
+            Browse Listings on eBay <ArrowRight size={16} />
+          </a>
         </div>
       </section>
     </div>

@@ -76,20 +76,3 @@ export const socialLinks = [
     icon: "ebay" as const,
   },
 ];
-
-export const ebayCategoryGroups = [
-  "Baseball",
-  "Football",
-  "Basketball",
-  "Hockey",
-  "Memorabilia",
-  "Starting Lineup Figures",
-  "Supplies",
-];
-
-export const conditionOptions = [
-  { label: "New", ebayId: "1000" },
-  { label: "Like New", ebayId: "2750" },
-  { label: "Used", ebayId: "3000" },
-  { label: "Not Specified", ebayId: "" },
-];
