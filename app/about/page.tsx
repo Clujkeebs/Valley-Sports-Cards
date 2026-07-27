@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-      <h1 className="font-display text-4xl text-valley-navy">Our Story</h1>
-      <p className="mt-2 font-display text-lg italic text-valley-red">
+      <h1 className="text-center font-display text-4xl text-valley-navy">Our Story</h1>
+      <p className="mt-2 text-center font-display text-lg italic text-valley-red">
         Herkimer &amp; Cooperstown, New York
       </p>
 
@@ -51,9 +51,7 @@ export default function AboutPage() {
             {business.ebayHandle}
           </a>
           , with thousands of cards, Starting Lineup figures, and memorabilia
-          shipped to collectors nationwide. You can browse and filter that
-          same inventory right here on our{" "}
-          <a href="/shop">Shop page</a>.
+          shipped to collectors nationwide.
         </p>
       </div>
 
